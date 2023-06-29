@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Registration Page</title>
+    <style>
+        p{
+            color: darkred;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: larger;
+        }
+         form {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 5px solid #521fde;
+        }
+        
+        
+        input[type="text"], input[type="email"],input[type="password"] ,input[type="number"] ,input[type="email"] ,input[type="tel"] ,input[type="date"] ,textarea[id="address"] ,select[id="country"] ,select[id='gender'] ,input [id="upload"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box; background-color: #afaa8d;
+    
+}
+ .formcontainer{
+  text-align: left;
+  margin: 25px;
+ }
+ button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            background-color: #1dd323;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            opacity: 0.8;
+            background-color: aqua;
+        }
+h1{
+    text-align: center;
+    font-size: 18px;
+}
+.choose{
+    display: flex;
+
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #afaa8d;
+}
+.container{
+    padding: 16px 0;
+    text-align: left;
+}
+span.Forget {
+    float: right;
+    padding-top: 20;
+    padding-right: 20px;
+}
+
+</style>
+</head>
+<body>
+<p>This is Registration Page</p>
+ <form>
+    <h1>Registration Page
+    </h1>
+    <div class="formcontainer"><hr/>
+    <div>
+        <div class="container">
+    <label>UserName</label>
+    <input type="text" name="name" placeholder="Enter your Name" required>
+    <label for="fatherName">Father's Name:</label>
+    <input type="text" id="fatherName" name="fatherName" placeholder="Enter your fatherName" required>
+    <label for="motherName">Mother's Name:</label>
+    <input type="text" id="motherName" name="motherName" placeholder="Enter your motherName"required>
+    <label for="dob">DOB:</label>
+    <input type="date" id="dob" name="dob" placeholder="Enter your dob" required>
+    <label>Email</label>
+    <input type="email" name="email" placeholder="Enter your Email" required>
+    <label>Password</label>
+    <input type="password" name="password" placeholder="Enter your Password" required>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your Phone number"required>
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" placeholder="Enter your address"required></textarea>
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+    <option value="">Select Country</option>
+    <option value="USA">USA</option>
+    <option value="India">India</option>
+    </select>
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+        </div>
+        <label class="choose" for="upload">Select Photo:</label>
+        <input id="upload" type="file">
+        <button type="submit" value="Submit">Submit</button>
+            <div style="background-color: rgb(152, 147, 158);">
+                <label>
+                    <input type="checkbox">
+                    Remember me
+                </label>
+            
+            <span class="Forget">
+                <a href="#">Forget Password</a>
+            </span>
+        </form>
+    </div>
+    </div>
+    
+</body>
+</html>
